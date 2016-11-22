@@ -10,8 +10,7 @@ The Web application can be run directly using the Manchester test data.
 
 1. The execution of the Web application requires the use of R, and the shiny library. The simplest way to run it is through Rstudio (https://www.rstudio.com/), opening either *ui.R* or *server.R*, and clicking on "Run App".
 2. The Web application opens automatically in a Web browser and loads the data with the predefined options.
-3. Before running any of the steps, the files *shellVariables.sh* and *MapreduceConstants* need to be filled with the information concerning the database installation.
-4. The different steps provide different functionalities, which requires different ways of execution.
+3. The different steps provide different functionalities, which require different ways of execution.
 
 ###Contact###
 For questions, or help using this tool, contact Aitor Apaolaza (aitor.apaolaza@manchester.ac.uk)

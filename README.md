@@ -19,7 +19,7 @@ If you have perform the analysis described in [UCIVIT-ProcessAndMicroBehaviours]
 1. First, delete or rename the "globalEpisodePoolAllUrlsObject.RData" file in the */data* folder. The following steps will replace this file.
 1. Move the resulting csv files (they should be in the folder *Step3_Analysis_extractors/data/combinedCSV/*) to the *data* folder.
 1. Open the *MixedModelAnalysis.R* with Rstudio, and press the "Source" button. All necessary libraries will be installed automatically. Depending on how many dependencies are missing, this step can take several minutes.
-1. Run the *loadAllEpisodes()* function. It reads all existing CSV files, and creates a single R object with them. It can take several hours depending on the machine. In a test with an i7 with SSD hard disk, it took around 80 minutes.
+1. Run the *loadAllEpisodes()* function. To do this, just write "loadAllEpisodes()" into the terminal. It reads all existing CSV files, and creates a single R object with them. It can take several hours depending on the machine. In a test with an i7 with SSD hard disk, it took around 80 minutes.
 1. Run the *saveLoadAllEpisodes()* to create the RData object.
 1. A file called "globalEpisodePoolAllUrlsObject.RData" should have been created in the */data/* folder.
 1. Execute the Web application as described in the previous section.

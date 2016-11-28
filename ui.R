@@ -1,3 +1,13 @@
+
+installMissingPackages <- function(){
+  list.of.packages <- c("shiny","ggplot2","lattice","lme4","lmerTest","ggplot2","stringr")
+  new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+  if(length(new.packages)) install.packages(new.packages)
+  else print("All listed packages are already installed")
+}
+installMissingPackages()
+
+
 library(shiny)
 
 # Define UI for random distribution application 

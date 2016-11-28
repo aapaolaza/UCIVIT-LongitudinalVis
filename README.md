@@ -12,6 +12,18 @@ The Web application can be run directly using the Manchester test data.
 2. The Web application opens automatically in a Web browser and loads the data with the predefined options.
 3. The different steps provide different functionalities, which require different ways of execution.
 
+### Using output data from UCIVIT-ProcessAndMicroBehaviours
+
+If you have perform the analysis described in [UCIVIT-ProcessAndMicroBehaviours](https://github.com/aapaolaza/UCIVIT-ProcessAndMicroBehaviours), you can use that resulting data instead of the one provided with this repository.
+
+1. First, delete or rename the "globalEpisodePoolAllUrlsObject.RData" file in the project's folder. The following steps will replace this file.
+1. Move the resulting csv files (they should be in the folder *Step3_Analysis_extractors/data/combinedCSV*) to the *data* folder.
+1. Open the *MixedModelAnalysis.R* with Rstudio, and press the "Source" button. All necessary libraries will be installed automatically. Depending on how many dependencies are missing, this step can take several minutes.
+1. Run the *loadAllEpisodes()* function. It reads all existing CSV files, and creates a single R object with them. It can take several hours depending on the machine. In a test with an i7 with SSD hard disk, it took around 80 minutes.
+1. Run the *saveLoadAllEpisodes()* to create the RData object.
+1. Move the resulting "globalEpisodePoolAllUrlsObject.RData" from the data folder to the project's folder.
+1. Execute the Web application as described in the previous section.
+
 ###Contact###
 For questions, or help using this tool, contact Aitor Apaolaza (aitor.apaolaza@manchester.ac.uk)
 

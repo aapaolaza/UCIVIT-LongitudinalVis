@@ -2,7 +2,7 @@
 
 This Web application supports researchers analysis of longitudinal interaction data. Distributions of interaction values at different stages of interaction are provided, as well as regression models through the use of linear mixed models.
 
-This tool comes preloaded with a set of anonymised data, obtained from the School of Computer Science Web site (cs.manchester.ac.uk). This data is the result of data captured using UCIVIT-WebIntCap and processed using UCIVIT-ProcessAndMicroBehaviours. The resulting interaction files were processed using the *microbehaviourProcessAndAnalysis.R* script to produce the *globalEpisodePoolAllUrlsObject.RData* which is used as input for the analysis.
+This tool comes preloaded with a set of anonymised data, obtained from the School of Computer Science Web site (cs.manchester.ac.uk). This data is the result of data captured using UCIVIT-WebIntCap and processed using UCIVIT-ProcessAndMicroBehaviours. The resulting interaction files were processed using the *MixedModelAnalysis.R* script to produce the *globalEpisodePoolAllUrlsObject.RData* which is used as input for the analysis.
 
 ### How do I get set up? ###
 
